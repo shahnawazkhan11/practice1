@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Aloe Vera",
+    "category": "Indoor",
+    "image": "assets/images/plant1.jpeg"
+  },
+  {
+    "name": "Snake Plant",
+    "category": "Indoor",
+    "image": "assets/images/plant2.jpeg"
+  },
+  {
+    "name": "Monstera Deliciosa",
+    "category": "Indoor",
+    "image": "assets/images/plant3.jpeg"
+  },
+  {
+    "name": "Areca Palm",
+    "category": "Outdoor",
+    "image": "assets/images/plant4.jpeg"
+  },
+  {
+    "name": "Rose",
+    "category": "Outdoor",
+    "image": "assets/images/plant5.jpeg"
+  },
+  {
+    "name": "Basil",
+    "category": "Outdoor",
+    "image": "assets/images/plant6.jpeg"
+  },
+  {
+    "name": "Lavender",
+    "category": "Bathroom",
+    "image": "assets/images/plant7.jpeg"
+  },
+  {
+    "name": "Cactus",
+    "category": "Bathroom",
+    "image": "assets/images/plant8.jpeg"
+  },
+  {
+    "name": "Tulsi",
+    "category": "Indoor",
+    "image": "assets/images/plant9.jpeg"
+  },
+  {
+    "name": "Fern",
+    "category": "Indoor",
+    "image": "assets/images/plant10.jpeg"
+  }
+]
