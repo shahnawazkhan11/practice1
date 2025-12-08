@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'data.dart';
+import 'auth.dart';
+import 'login.dart';
 
 class HomesScreen extends StatefulWidget {
   const HomesScreen({super.key});
@@ -12,7 +14,6 @@ class _HomesScreenState extends State<HomesScreen> {
   List<Plant> _allPlants = [];
   List<Plant> _filteredPlants = [];
   String _selectedCat = "ALL";
-  final List<String> _cat = ["ALL","INDOOR" , "OUTDOOR" , "BATHROOM"];
   final TextEditingController _searchController = TextEditingController(); 
 
   @override
@@ -141,7 +142,16 @@ class _HomesScreenState extends State<HomesScreen> {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Icon(Icons.account_circle_sharp , size: 30.0, color: Colors.grey,),
-            Icon(Icons.settings , size: 30.0, color: Colors.grey,)
+            IconButton(
+              icon: Icon(Icons.logout, size: 30.0, color: Colors.grey),
+              onPressed: () async {
+                await Auth.logout();
+                Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(builder: (_) => Login()),
+                );
+              },
+            ),
 
           ],
 
