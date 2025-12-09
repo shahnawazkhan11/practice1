@@ -3,7 +3,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 class Auth {
   static Future<bool> register(String email, String pwd) async {
     final p = await SharedPreferences.getInstance();
-    if (p.getString('email') != null) return false;
+    if (p.getString('email') != null && p.getString('email') == email) return false;
     await p.setString('email', email);
     await p.setString('pwd', pwd);
     await p.setBool('logged', true);
